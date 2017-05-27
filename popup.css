@@ -1,0 +1,37 @@
+@keyframes dropback{0%{background-color:transparent}to{background-color:rgba(0,0,0,.7)}}
+
+button,
+#popup,
+#popup:before{margin:0 auto}
+
+button,
+#popup,
+#popup:before,
+#popup-box,
+#popup-title{border:0;outline:0;overflow:hidden}
+
+#popup:before,
+#popup.open{transform:none;position:fixed;top:0;right:0;bottom:0;left:0;padding:0;border-radius:0;max-width:100%;font:0/0 sans-serif}
+
+#popup:before,
+#popup.open,
+#popup-box,
+#popup-title{display:block;width:100%;content:''}
+
+#popup-title,
+#popup-content{text-align:left;text-align-last:left}
+
+button,
+button:before{cursor:pointer}
+
+button{font:600 16px/18px arial,sans-serif;padding:10px 20px;border-radius:8px;text-shadow:1px 1px 2px rgba(0,0,0,.4),0 1px 0 rgba(0,0,0,.5);box-shadow:1px 1px 3px rgba(0,0,0,.36),rgba(255,255,255,.23) 3px 3px 0 0 inset,inset -1px -2px 4px rgba(0,0,0,.62);background-color:#f70000;color:#fff}
+
+#popup{display:none}
+#popup:before{animation:dropback .5s 1 forwards}
+
+#popup-box{position:relative;top:50%;top:50vh;right:auto;bottom:auto;left:auto;margin:-12% auto 0;margin:-12vh auto 0;font:14px/18px arial,sans-serif;padding:12px 18px;max-width:320px;text-align:right;border-radius:8px;background:#fff;color:#333}
+
+#popup-title{padding:0;margin:0 0 6px;font:700 21px tahoma,arial,sans-serif}
+
+#popup-confirm{position:static;margin:0 -6px 0 0}
+#popup-confirm:before{content:'\00D7';position:absolute;top:4px;right:5px;font-size:20px;line-height:30px;width:30px;text-decoration:none;margin:0;padding:0;text-align:center;border-radius:15px;font-weight:800;text-shadow:none;color:#333}

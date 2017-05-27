@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+		<div id="popup">
+			<div id="popup-box">
+				<h2 id="popup-title">Titolo</h2>
+				 <div id="popup-content">
+					Thank to pop me out, but now i&rsquo;m done so you can close this window.
+				 </div>
+				<button id="popup-confirm">OK</button>
+			</div>	
+		</div>
+
+
+popup:<a id="test" href="#test">open</a>
+<script>
+var $popup=document.getElementById('popup');
+document.getElementById('test').onclick=function(){$popup.classList.add('open')}
+document.getElementById('popup-confirm').onclick=function(){$popup.classList.remove('open')}
+</script>
+
+</body>
+</html>
